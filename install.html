@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Install SmartForm AI - Simple steps to get started">
+    <title>Install SmartForm AI - Chrome Extension</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .install-hero {
+            text-align: center;
+            padding: 120px 20px 60px;
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+        }
+
+        .install-hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .install-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+        }
+
+        .install-container {
+            max-width: 900px;
+            margin: -40px auto 80px;
+            padding: 0 20px;
+        }
+
+        .install-card {
+            background: var(--card-bg);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .install-steps {
+            counter-reset: step-counter;
+        }
+
+        .install-step {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .install-step::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-family: var(--font-display);
+        }
+
+        .install-step h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .install-step p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .install-step code {
+            background: var(--glass-bg);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--primary-purple);
+            font-size: 0.9rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: transform var(--transition-normal);
+            margin: 1rem 0;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        }
+
+        .chrome-store-badge {
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .chrome-store-badge img {
+            height: 60px;
+        }
+
+        .alert {
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 1.5rem 0;
+        }
+
+        .alert-info {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: var(--text-primary);
+        }
+
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: var(--text-primary);
+        }
+
+        .features-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-box {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--glass-border);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-box h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-box p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="images/icon.png" alt="SmartForm AI" class="logo-icon">
+                    <span>SmartForm AI</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#how-it-works">How It Works</a></li>
+                    <li><a href="blog/">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <a href="install.html" class="btn btn-primary">Install Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="install-hero">
+        <h1>Install SmartForm AI</h1>
+        <p>Get started in less than 2 minutes</p>
+    </div>
+
+    <div class="install-container">
+        <div class="install-card">
+            <div class="alert alert-info">
+                <strong>📢 Coming Soon to Chrome Web Store!</strong><br>
+                SmartForm AI will be available on the Chrome Web Store soon. For now, you can install it manually
+                following the steps below.
+            </div>
+
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="https://github.com/Starship01-akaSniper/smartform-extension/archive/refs/heads/main.zip"
+                    class="download-btn">
+                    <span>⬇️</span>
+                    <span>Download Extension</span>
+                </a>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">Free • No signup required • Works offline</p>
+            </div>
+
+            <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Installation Steps</h2>
+
+            <div class="install-steps">
+                <div class="install-step">
+                    <h3>Download the Extension</h3>
+                    <p>Click the download button above to get the latest version of SmartForm AI. The file will be
+                        downloaded as a ZIP archive.</p>
+                </div>
+
+                <div class="install-step">
+                    <h3>Extract the ZIP File</h3>
+                    <p>Right-click the downloaded ZIP file and select "Extract All" or "Extract Here". Remember the
+                        location where you extract it.</p>
+                </div>
+
+                <div class="install-step">
+                    <h3>Open Chrome Extensions</h3>
+                    <p>In Google Chrome, navigate to <code>chrome://extensions/</code> or click the three dots menu →
+                        More Tools → Extensions.</p>
+                </div>
+
+                <div class="install-step">
+                    <h3>Enable Developer Mode</h3>
+                    <p>Toggle the "Developer mode" switch in the top-right corner of the Extensions page.</p>
+                </div>
+
+                <div class="install-step">
+                    <h3>Load the Extension</h3>
+                    <p>Click the "Load unpacked" button and select the extracted <code>smartform-extension</code>
+                        folder.</p>
+                </div>
+
+                <div class="install-step">
+                    <h3>Start Using SmartForm AI! 🎉</h3>
+                    <p>The extension icon will appear in your Chrome toolbar. Visit any website with a form and watch
+                        SmartForm AI detect it automatically!</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Keep the Extension Folder</strong><br>
+                Don't delete the extracted folder after installation! Chrome needs it to run the extension. Move it to a
+                permanent location if needed.
+            </div>
+        </div>
+
+        <div class="install-card">
+            <h2 style="margin-bottom: 1.5rem;">What You Get</h2>
+
+            <div class="features-preview">
+                <div class="feature-box">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Auto-Fill Forms</h4>
+                    <p>Fill complex forms in seconds with intelligent automation</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🧠</div>
+                    <h4>AI Analysis</h4>
+                    <p>Smart detection and understanding of form fields</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🔒</div>
+                    <h4>Privacy First</h4>
+                    <p>All data stays on your device - nothing sent to servers</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">📋</div>
+                    <h4>5 Forms/Day Free</h4>
+                    <p>Start with our free tier - upgrade anytime for unlimited</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="pricing.html" class="btn btn-secondary"
+                    style="display: inline-block; padding: 1rem 2rem; border-radius: 8px; text-decoration: none;">
+                    View Pricing Plans →
+                </a>
+            </div>
+        </div>
+
+        <div class="install-card">
+            <h2 style="margin-bottom: 1rem;">Need Help?</h2>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+                If you encounter any issues during installation, check out our <a href="blog/"
+                    style="color: var(--primary-purple);">installation guide</a>
+                or contact us at <a href="mailto:support@smartformai.com"
+                    style="color: var(--primary-purple);">support@smartformai.com</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SmartForm AI. Built with care to save you time.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
