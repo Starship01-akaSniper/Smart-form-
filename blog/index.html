@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartForm AI Blog - Tips, tutorials, and insights on form filling automation">
+    <title>Blog - SmartForm AI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .blog-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 20px 60px;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .blog-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: transform var(--transition-normal);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-purple);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+        }
+
+        .blog-content {
+            padding: var(--spacing-lg);
+        }
+
+        .blog-date {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .blog-card h3 {
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--font-display);
+        }
+
+        .blog-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../" class="logo">
+                    <img src="../images/icon.png" alt="SmartForm AI" class="logo-icon">
+                    <span>SmartForm AI</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../#features">Features</a></li>
+                    <li><a href="../#how-it-works">How It Works</a></li>
+                    <li><a href="./">Blog</a></li>
+                </ul>
+                <a href="../#get-started" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1>SmartForm AI <span class="gradient-text">Blog</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.125rem; max-width: 600px; margin: 1rem auto 0;">
+                Tips, tutorials, and insights on automating your form-filling workflow
+            </p>
+        </div>
+
+        <div class="blog-posts">
+            <a href="./how-to-save-hours-with-smart-forms.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 20, 2026</div>
+                    <h3>How to Save Hours Every Week with Smart Form Filling</h3>
+                    <p class="blog-excerpt">
+                        Learn how SmartForm AI can transform your daily workflow and save you countless hours on
+                        repetitive form filling tasks.
+                    </p>
+                </div>
+            </a>
+
+            <a href="./ultimate-guide-to-form-automation.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 18, 2026</div>
+                    <h3>The Ultimate Guide to Form Automation in 2026</h3>
+                    <p class="blog-excerpt">
+                        Discover the latest trends in form automation and how AI is revolutionizing the way we interact
+                        with online forms.
+                    </p>
+                </div>
+            </a>
+
+            <a href="./privacy-and-security.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 15, 2026</div>
+                    <h3>Privacy & Security: How SmartForm AI Protects Your Data</h3>
+                    <p class="blog-excerpt">
+                        Understanding the privacy-first approach we take to ensure your personal information stays
+                        secure.
+                    </p>
+                </div>
+            </a>
+
+            <a href="./job-applications-made-easy.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 12, 2026</div>
+                    <h3>Job Applications Made Easy: Speed Up Your Job Search</h3>
+                    <p class="blog-excerpt">
+                        How to use SmartForm AI to apply to more jobs faster, without sacrificing quality or accuracy.
+                    </p>
+                </div>
+            </a>
+
+            <a href="./tips-and-tricks.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 10, 2026</div>
+                    <h3>10 SmartForm AI Tips and Tricks You Need to Know</h3>
+                    <p class="blog-excerpt">
+                        Master SmartForm AI with these pro tips that will make you a form-filling wizard.
+                    </p>
+                </div>
+            </a>
+
+            <a href="./browser-extension-basics.html" class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <div class="blog-date">January 8, 2026</div>
+                    <h3>Browser Extensions 101: How SmartForm AI Works</h3>
+                    <p class="blog-excerpt">
+                        A technical deep-dive into how our browser extension analyzes and fills forms intelligently.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SmartForm AI. Built with care to save you time.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
